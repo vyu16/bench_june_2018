@@ -1,0 +1,31 @@
+XC.Functional  GGA
+XC.Authors     PBE
+
+ElectronicTemperature 1.d2 K
+
+MaxSCFIterations  10
+DM.Tolerance      1.d-5
+DM.MixingWeight   0.1d0
+DM.NumberPulay    3
+
+#SolutionMethod            elsi
+#ELSI.Solver               elpa
+#ELSI.OutputJson           1
+#ELSI.OutputLevel          3
+#ELSI.PEXSI.TasksSymbolic  xxx
+#ELSI.SIPS.Slices          xxx
+
+WriteDM  F
+SaveHS   F
+
+MeshCutoff  300.d0 Ry
+
+%block PS.lmax
+    C 2
+%endblock PS.lmax
+
+%block SuperCell
+ xxx   0    0
+  0   yyy   0
+  0    0   zzz
+%endblock SuperCell
