@@ -1,0 +1,78 @@
+Geometry = GenFormat {
+...
+}
+Driver = {}
+Hamiltonian = DFTB {
+  SCC = Yes
+#  Eigensolver = PEXSI {
+#  }
+  Eigensolver = ELPA {
+  }
+#  Eigensolver = SIPS {
+#  }
+  MaxAngularMomentum = {
+    Si = "p"
+    C = "p"
+  }
+  Filling = Fermi {
+    Temperature [Kelvin] = 100.0
+    IndependentKFilling = No
+  }
+  SlaterKosterFiles = {
+    C-C = "./C-C.skf"
+  }
+  KPointsAndWeights = {
+    0.0 0.0 0.0 1.0
+  }
+  InitialCharges = {}
+  SCCTolerance = 1.000000000000000E-005
+  Mixer = Broyden {
+    MixingParameter = 0.200000000000000
+    InverseJacobiWeight = 1.000000000000000E-002
+    MinimalWeight = 1.00000000000000
+    MaximalWeight = 100000.000000000
+    WeightFactor = 1.000000000000000E-002
+  }
+  SpinPolarisation = {}
+  ElectricField = {}
+  Charge = 0.000000000000000E+000
+  MaxSCCIterations = 10
+  Dispersion = {}
+}
+Analysis = {
+  CalculateForces = No
+  ProjectStates = {}
+  MullikenAnalysis = No
+  AtomResolvedEnergies = No
+  WriteEigenvectors = No
+  WriteBandOut = No
+}
+Options = {
+  WriteAutotestTag = No
+  WriteDetailedOut = Yes
+  WriteDetailedXML = No
+  WriteResultsTag = No
+  RestartFrequency = 20
+  RandomSeed = 0
+  WriteHS = No
+  WriteRealHS = No
+  MinimiseMemoryUsage = No
+  ShowFoldedCoords = No
+  TimingVerbosity = 0
+  WriteChargesAsText = No
+}
+ParserOptions = {
+  ParserVersion = 5
+  WriteHSDInput = Yes
+  WriteXMLInput = No
+  StopAfterParsing = No
+  IgnoreUnprocessedNodes = No
+}
+Parallel = {
+  UseOmpThreads = No
+  Groups = 1
+  Blacs = BlockSize {
+    32
+  }
+}
+ExcitedState = {}
