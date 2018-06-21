@@ -1,13 +1,15 @@
 #
+ sc_iter_limit  2
+#
  xc  pbe
- vdw_correction_hirshfeld
  charge  0.d0
  spin  none
 #
  n_max_pulay  8
  charge_mix_param  5.d-2
  occupation_type  gaussian 5.d-2
- preconditioner  kerker 2.d0
+ preconditioner  off
+ density_update_method  density_matrix
 #
  compensate_multipole_errors  .true.
 #
@@ -25,7 +27,7 @@
 # elsi_solver  sips
 # elsi_output  debug
 # elsi_output  json
-# elsi_pexsi_np_symbo  xxx
+# elsi_pexsi_np_symbo  4
 # elsi_sips_n_slice  xxx
 #
 ################################################################################
