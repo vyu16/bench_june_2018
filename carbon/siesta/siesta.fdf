@@ -12,7 +12,7 @@ DM.NumberPulay    3
 #ELSI.Solver               elpa
 #ELSI.OutputJson           1
 #ELSI.OutputLevel          3
-#ELSI.PEXSI.TasksSymbolic  xxx
+#ELSI.PEXSI.TasksSymbolic  4
 #ELSI.SIPS.Slices          xxx
 
 WriteDM  F
