@@ -1,0 +1,10 @@
+# Material:  Silicon
+# Structure: Diamond phase, experimental lattice constant of a = 5.4286 A (T = ??? K)
+# Source:    Pearson's Handbook (1985)
+# Keywords:  3D, Generated, Dataset, Bulk
+# Note:      
+lattice_vector    0.000000    2.714300    2.714300
+lattice_vector    2.714300    0.000000    2.714300
+lattice_vector    2.714300    2.714300    0.000000
+atom              0.000000    0.000000    0.000000 Si
+atom              1.357150    1.357150    1.357150 Si
