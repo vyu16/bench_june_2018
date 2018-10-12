@@ -1,11 +1,7 @@
-# Material:  DNA
-# Structure: A-DNA double helix (T = ??? K)
-# Source:    Provided by Lin Lin, used in Lin et al., J. Phys. Condens. Matter 26, 305503 (2014)
-# Keywords:  1D_Z, Biological, Article, Provided
-# Note:      
-lattice_vector 30.00   0.00   0.00
-lattice_vector  0.00  30.00   0.00
-lattice_vector  0.00   0.00  30.58
+lattice_vector  30.00   0.00   0.00
+lattice_vector   0.00  30.00   0.00
+lattice_vector   0.00   0.00  30.58
+
 atom   18.36705365   23.04803479   -3.56396157   P
 atom   17.30660459   21.87893390   -3.26064524   O
 atom   17.53858188   21.04542804   -3.73789643   H
