@@ -4,6 +4,7 @@
  xc  pbe
  charge  0.d0
  spin  none
+ relativistic  atomic_zora scalar
 #
  n_max_pulay  8
  charge_mix_param  5.d-2
