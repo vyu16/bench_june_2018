@@ -5,7 +5,7 @@ Geometry = GenFormat {
 Driver = {}
 
 Hamiltonian = DFTB {
-  SCC = Yes
+  SCC = No
   Eigensolver = ELPA {}
   MaxAngularMomentum = {
     Si = "p"
@@ -19,9 +19,7 @@ Hamiltonian = DFTB {
   KPointsAndWeights = {
     0.0 0.0 0.0 1.0
   }
-  SCCTolerance = 1.000000000000000E-005
   Charge = 0.000000000000000E+000
-  MaxSCCIterations = 5
 }
 Analysis = {
   CalculateForces = No
@@ -36,7 +34,6 @@ Options = {
   WriteDetailedOut = Yes
   WriteDetailedXML = No
   WriteResultsTag = No
-  RestartFrequency = 20
   RandomSeed = 0
   WriteHS = No
   WriteRealHS = No
